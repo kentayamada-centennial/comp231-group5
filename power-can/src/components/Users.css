@@ -1,0 +1,70 @@
+/* src/components/Users.css */
+.users {
+    padding: 20px;
+  }
+  
+  .users ul {
+    list-style: none;
+    padding: 0;
+  }
+  
+  .users ul li {
+    margin-bottom: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .users ul li div {
+    display: flex;
+    align-items: center;
+    width: 100%;
+  }
+  
+
+  .user-actions {
+    display: flex;
+    gap: 10px;
+  }
+  
+  .users ul li button {
+    padding: 5px 10px;
+    border: none;
+    background-color: #0057b7;
+    color: white;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .users ul li button:hover {
+    background-color: #004494;
+  }
+  
+  .edit-form {
+    margin-top: 20px;
+  }
+  
+  .edit-form input {
+    margin-right: 10px;
+    padding: 5px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+  }
+  
+  .edit-form button {
+    padding: 5px 10px;
+    border: none;
+    background-color: #0057b7;
+    color: white;
+    border-radius: 4px;
+    cursor: pointer;
+    margin: 20px;
+
+    transition: background-color 0.3s ease;
+  }
+  
+  .edit-form button:hover {
+    background-color: #004494;
+  }
+  

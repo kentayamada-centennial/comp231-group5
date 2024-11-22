@@ -1,0 +1,41 @@
+/* src/components/AdminPanel.css */
+.admin-panel {
+    display: flex;
+    min-height: 100vh;
+    background-color: #f4f6f9;
+  }
+  
+  .admin-nav {
+    width: 100px;
+    background: #0057b7;
+    color: white;
+    padding: 20px;
+  }
+  
+  .admin-nav ul {
+    list-style: none;
+    padding: 0;
+  }
+  
+  .admin-nav ul li {
+    margin-bottom: 10px;
+  }
+  
+  .admin-nav ul li a {
+    color: white;
+    text-decoration: none;
+    display: block;
+    padding: 10px;
+    border-radius: 4px;
+    transition: background 0.3s ease;
+  }
+  
+  .admin-nav ul li a:hover {
+    background: #004494;
+  }
+  
+  .admin-content {
+    flex: 1;
+    padding: 20px;
+  }
+  
