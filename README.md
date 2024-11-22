@@ -2,6 +2,8 @@
 
 This is a full-stack web application designed to monitor and manage energy metrics for users. The application includes features for user registration, login, dashboards for individual users, and an admin panel for managing users.
 
+[Project's Kanban Here](https://github.com/users/kentayamada-centennial/projects/7)
+
 ---
 
 ## **Features**
