@@ -51,7 +51,7 @@ router.post('/login', async (req, res) => {
     }
   });
 
-
+// User Management APIs - UT
 router.get('/users', async (req, res) => {
     try {
         await client.connect();
@@ -122,5 +122,7 @@ router.put('/users/:id', async (req, res) => {
         await client.close();
     }
 });
+
+// User Management APIs - UT
 
 module.exports = router;
