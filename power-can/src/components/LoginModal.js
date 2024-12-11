@@ -11,7 +11,7 @@ function LoginModal({ isOpen, onClose, setIsAdmin }) {
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    axios.post("https://power-canada-group-backend.onrender.com/api/login", { email, password })
+    axios.post("https://power-canada-group-backend-ei7l.onrender.com/api/login", { email, password })
       .then((response) => {
         const user = response.data;
         if (user.isAdmin) {
