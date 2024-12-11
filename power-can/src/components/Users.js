@@ -10,13 +10,13 @@ function Users() {
   const [editEmail, setEditEmail] = useState('');
 
   useEffect(() => {
-    axios.get('https://power-canada-group-backend.onrender.com/api/users')
+    axios.get('https://power-canada-group-backend-ei7l.onrender.com/api/users')
       .then(response => setUsers(response.data))
       .catch(error => console.error('Error fetching users:', error));
   }, []);
 
   const handleDelete = (id) => {
-    axios.delete(`https://power-canada-group-backend.onrender.com/api/users/${id}`)
+    axios.delete(`https://power-canada-group-backend-ei7l.onrender.com/api/users/${id}`)
       .then(() => setUsers(users.filter(user => user._id !== id)))
       .catch(error => console.error('Error deleting user:', error));
   };
@@ -28,7 +28,7 @@ function Users() {
   };
 
   const handleUpdate = () => {
-    axios.put(`https://power-canada-group-backend.onrender.com/api/users/${editUser._id}`, { name: editName, email: editEmail })
+    axios.put(`https://power-canada-group-backend-ei7l.onrender.com/api/users/${editUser._id}`, { name: editName, email: editEmail })
       .then(() => {
         setUsers(users.map(user => user._id === editUser._id ? { ...user, name: editName, email: editEmail } : user));
         setEditUser(null);
